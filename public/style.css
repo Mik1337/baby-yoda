@@ -37,7 +37,7 @@ body {
   font-family: "Pathway Gothic One", sans-serif;
   font-size: 500%;
   font-weight: 600;
-  letter-spacing: 6px;
+  /* letter-spacing: 1px; */
   line-height: 150%;
   perspective: 400px;
   text-align: justify;
@@ -45,7 +45,7 @@ body {
 
 .crawl {
   position: relative;
-  top: 100px;
+  top: 0px;
   transform-origin: 50% 100%;
   animation: crawl 100s linear infinite;
 }
@@ -66,7 +66,7 @@ body {
     transform: rotateX(20deg) translateZ(0);
   }
   100% {
-    top: -6000px;
+    top: -5000px;
     transform: rotateX(25deg) translateZ(-2500px);
   }
 }
@@ -83,8 +83,12 @@ body {
 
 @media only screen and (max-width: 600px) {
   audio {
-    border-radius: 0px;
     padding-bottom: 2em;
+  }
+  .thicc {
+    font-size: 6vw;
+    font-weight: 200px;
+    line-height: 7vw;
   }
 }
 
