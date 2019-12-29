@@ -1,0 +1,45 @@
+body {
+  background-color: black !important;
+  /* background image */
+  background-image: url(https://static.boredpanda.com/blog/wp-content/uploads/2019/11/baby-yoda-the-mandalorian-star-wars-3-5dd13dc8162be__700.jpg);
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-mik {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  -webkit-backdrop-filter: blur(5px) !important;
+  backdrop-filter: blur(5px) !important  ;
+}
+
+.nav-link {
+  font-weight: bold;
+  color: rgba(255, 255, 0, 0.7) !important;
+}
+
+.navbar-nav.navbar-center {
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+.rotateAndFall {
+  position: relative;
+}
+@media only screen and (max-width: 600px) {
+  audio {
+    border-radius: 0px;
+    padding-bottom: 2em;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  audio {
+    border-radius: 23px;
+    width: 50vw;
+    padding-bottom: 2em;
+  }
+}
