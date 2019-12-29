@@ -1,0 +1,4 @@
+*.aif
+*.aup
+node_modules
+*.lock
