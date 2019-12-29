@@ -7,6 +7,8 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  /* hide overflow */
+  overflow: hidden;
 }
 
 .bg-mik {
