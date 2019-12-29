@@ -69,7 +69,25 @@
       </div>
     </nav>
 
-    <div class="container-fluid">
+    <script>
+      function changeWallpaper() {
+        images = [
+          "https://wallpapercave.com/wp/wp4976541.jpg",
+          "https://wallpapercave.com/wp/wp4959346.jpg",
+          "https://wallpapercave.com/wp/wp4959348.jpg",
+          "https://wallpapercave.com/wp/wp4976540.jpg",
+          "https://wallpapercave.com/wp/wp4976542.jpg",
+          "https://wallpapercave.com/wp/wp4976547.jpg",
+          "https://wallpapercave.com/wp/wp4976550.jpg",
+          "https://wallpapercave.com/wp/wp4976551.jpg"
+        ];
+        console.log(images[Math.round(Math.random(images.length)*10)]);
+        document.getElementsByTagName("body")[0].style.backgroundImage = `url(${
+          images[Math.round(Math.random(images.length)*10)]
+        })`;
+      }
+    </script>
+    <div class="container-fluid" onclick="changeWallpaper()">
       <section class="star-wars">
         <div class="crawl">
           <div class="title">
@@ -77,7 +95,7 @@
               Baby Yoda
             </h1>
           </div>
-          <div> 
+          <div>
             <!-- there's a million better ways of doing this but lol -->
             <p class="slim-thicc">
               Baby Yoda, Baby Baby Yoda, Baby Yoda, Baby Baby Yoda...
