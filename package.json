@@ -1,0 +1,11 @@
+{
+  "name": "baby-yoda",
+  "version": "0.0.1",
+  "description": "this is the way",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Mik",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
