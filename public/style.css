@@ -26,9 +26,24 @@ body {
   transform: translatex(-50%);
 }
 
-.rotateAndFall {
-  position: relative;
+.dropframe {
+  padding-top: 50px;
+  padding-left: 50px;
+  font-weight: bolder;
+  color: rgba(255, 255, 0, 0.7) !important;
+  transform: skew(30deg, 20deg);
 }
+
+.thicc {
+  font-size: 12vw;
+  line-height: 12vw;
+}
+
+.slim-thicc {
+  font-size: 4vw;
+  line-height: 4vw;
+}
+
 @media only screen and (max-width: 600px) {
   audio {
     border-radius: 0px;
