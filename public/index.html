@@ -16,6 +16,7 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="uwa.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -31,7 +32,12 @@
       gtag("config", "UA-136836752-4");
     </script>
   </head>
-  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <body
+    data-spy="scroll"
+    data-target=".navbar"
+    data-offset="50"
+    onload="timer()"
+  >
     <nav
       class="navbar navbar-expand-md bg-mik navbar-dark navbar-dark container-fluid fixed-top"
     >
@@ -63,29 +69,14 @@
         </ul>
         <ul class="nav navbar-nav ml-auto pull-right nav-extras">
           <li class="nav-item">
-            <a class="nav-link" href="#" onclick="changeWallpaper()">MORE YODA</a>
+            <a class="nav-link" href="#" onclick="changeWallpaper()"
+              >MORE YODA</a
+            >
           </li>
         </ul>
       </div>
     </nav>
 
-    <script>
-      function changeWallpaper() {
-        images = [
-          "https://wallpapercave.com/wp/wp4976541.jpg",
-          "https://wallpapercave.com/wp/wp4959346.jpg",
-          "https://wallpapercave.com/wp/wp4959348.jpg",
-          "https://wallpapercave.com/wp/wp4976540.jpg",
-          "https://wallpapercave.com/wp/wp4976542.jpg",
-          "https://wallpapercave.com/wp/wp4976547.jpg",
-          "https://wallpapercave.com/wp/wp4976550.jpg",
-          "https://wallpapercave.com/wp/wp4976551.jpg"
-        ];
-        document.getElementsByTagName("body")[0].style.backgroundImage = `url(${
-          images[Math.floor(Math.random() * images.length)]
-        })`;
-      }
-    </script>
     <div class="container-fluid" onclick="changeWallpaper()">
       <section class="star-wars">
         <div class="crawl">
@@ -94,7 +85,7 @@
               Baby Yoda
             </h1>
           </div>
-          <div>
+          <div title="the sacred text">
             <!-- there's a million better ways of doing this but lol -->
             <p class="slim-thicc">
               Baby Yoda, Baby Baby Yoda, Baby Yoda, Baby Baby Yoda...
@@ -2718,6 +2709,26 @@
           <source src="/assets/back up vocals.mp3" type="audio/mpeg" />
           Your browser does not support the audio element.
         </audio>
+      </div>
+
+      <div class="nav navbar-nav desktop-only">
+        <button
+          type="button"
+          class="btn btn-warning"
+          onclick="changeWallpaper()"
+        >
+          You've been blessed for <time class="time">0</time> seconds
+        </button>
+      </div>
+
+      <div class="nav navbar-nav desktop-only">
+        <span>
+          <button type="button" class="btn btn-warning" onclick="tweet()">
+            <a id="updateMe">
+              Tweet About Your Blessing <time class="time">0</time>
+            </a>
+          </button>
+        </span>
       </div>
     </nav>
   </body>

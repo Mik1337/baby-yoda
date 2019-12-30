@@ -80,6 +80,15 @@ body {
   line-height: 4vw;
 }
 
+.timer {
+  font-weight: bold;
+  color: rgba(255, 255, 0, 1) !important;
+}
+
+button {
+  color: black !important;
+}
+
 @media only screen and (max-width: 600px) {
   audio {
     padding-bottom: 2em;
@@ -91,10 +100,17 @@ body {
   }
 }
 
+@media only screen and (max-width: 1164px) {
+  /* looks bad in others */
+  .desktop-only {
+    display: none !important;
+  }
+}
+
 @media only screen and (min-width: 600px) {
   audio {
     border-radius: 23px;
     width: 50vw;
-    padding-bottom: 2em;
+    /* padding-bottom: 2em; */
   }
 }
