@@ -26,5 +26,5 @@ function tweet() {
   time = Number(document.getElementsByClassName("time")[0].innerHTML);
   document.getElementById(
     "updateMe"
-  ).href = `https://twitter.com/intent/tweet?text=I've received Baby Yoda's blessing for ${time} seconds`;
+  ).href = `https://twitter.com/intent/tweet?text=I've received Baby Yoda's blessing for ${time} seconds here https://babe-yoda.herokuapp.com/`;
 }
